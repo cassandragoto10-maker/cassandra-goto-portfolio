@@ -1,1 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fluidization Experimental Analysis | Cassandra Goto</title>
+
+    <meta name="description"
+        content="Experimental fluidization analysis using silica sand, pressure-drop measurements, Python and theoretical correlations.">
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="../index.html" class="logo">
+            CG
+        </a>
+
+        <nav>
+
+            <a href="../index.html#about">
+                About
+            </a>
+
+            <a href="../index.html#work">
+                Projects
+            </a>
+
+            <a href="../index.html#skills">
+                Skills
+            </a>
+
+            <a href="../documents/Cassandra_Goto_CV.pdf"
+                target="_blank">
+                CV
+            </a>
+
+            <a href="../index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- PROJECT HERO -->
+
+        <section class="project-hero">
+
+            <a href="../index.html#work" class="back-link">
+                ← Back to projects
+            </a>
+
+
+            <p class="eyebrow">
+                CHEMICAL ENGINEERING · EXPERIMENTAL DATA · PYTHON
+            </p>
+
+
+            <h1>
+                Fluidization<br>
+                <span>Experimental Analysis.</span>
+            </h1>
+
+
+            <p class="project-intro">
+
+                Experimental investigation of a water–silica sand
+                fluidized bed, using pressure-drop measurements,
+                bed expansion and theoretical correlations to
+                determine the minimum fluidisation velocity and
+                fluidisation regime.
+
+            </p>
+
+
+            <div class="project-tags-large">
+
+                <span>Fluidization</span>
+                <span>Python</span>
+                <span>Data Analysis</span>
+                <span>Process Engineering</span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- KEY RESULTS -->
+
+        <section class="project-results">
+
+            <div class="result-card">
+
+                <strong>
+                    0.01886
+                </strong>
+
+                <span>
+                    m/s
+                </span>
+
+                <p>
+                    Experimental minimum fluidisation velocity
+                </p>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <strong>
+                    490.33
+                </strong>
+
+                <span>
+                    Pa
+                </span>
+
+                <p>
+                    Pressure drop at minimum fluidisation
+                </p>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <strong>
+                    0.04534
+                </strong>
+
+                <span>
+                    Fr
+                </span>
+
+                <p>
+                    Experimental Froude number
+                </p>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <strong>
+                    11.4 → 14.5
+                </strong>
+
+                <span>
+                    cm
+                </span>
+
+                <p>
+                    Observed bed-height expansion
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+
+        <section class="project-section">
+
+            <div class="section-label">
+                01 — PROJECT OVERVIEW
+            </div>
+
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <h2>
+                        From fixed bed to
+                        <span>fluidized bed.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        This academic laboratory investigation examined
+                        the behaviour of a granular bed as water flow
+                        increased through silica sand particles.
+
+                    </p>
+
+
+                    <p>
+
+                        The experiment focused on identifying the
+                        transition from fixed-bed operation to
+                        fluidization and determining the minimum
+                        fluidisation velocity from experimental
+                        pressure-drop behaviour.
+
+                    </p>
+
+
+                    <p>
+
+                        Experimental results were then compared with
+                        theoretical predictions from the Ergun and
+                        Carman–Kozeny correlations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROJECT OBJECTIVES -->
+
+        <section class="project-section light-section">
+
+            <div class="section-label">
+                02 — OBJECTIVES
+            </div>
+
+
+            <div class="objective-grid">
+
+                <div class="objective-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Determine minimum fluidisation velocity
+                    </h3>
+
+                    <p>
+
+                        Identify the experimental velocity at which
+                        the silica sand bed transitions from fixed
+                        to fluidized behaviour.
+
+                    </p>
+
+                </div>
+
+
+                <div class="objective-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Analyse pressure drop
+                    </h3>
+
+                    <p>
+
+                        Measure pressure drop across the bed over
+                        increasing water flow rates.
+
+                    </p>
+
+                </div>
+
+
+                <div class="objective-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Compare theoretical models
+                    </h3>
+
+                    <p>
+
+                        Compare experimental pressure drops with
+                        predictions from the Ergun and
+                        Carman–Kozeny correlations.
+
+                    </p>
+
+                </div>
+
+
+                <div class="objective-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Identify fluidisation behaviour
+                    </h3>
+
+                    <p>
+
+                        Use observations and the Froude number to
+                        distinguish particulate and aggregative
+                        fluidisation behaviour.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- EXPERIMENTAL APPROACH -->
+
+        <section class="project-section">
+
+            <div class="section-label">
+                03 — EXPERIMENTAL APPROACH
+            </div>
+
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <h2>
+                        The
+                        <span>experiment.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The investigation used 0.8 mm silica sand
+                        particles in a transparent fluidisation column.
+                        Water was circulated through the bed and the
+                        flow rate was increased incrementally.
+
+                    </p>
+
+
+                    <p>
+
+                        Pressure difference was measured using
+                        piezometer/manometer tubes while bed height
+                        was recorded as the flow rate increased.
+
+                    </p>
+
+
+                    <p>
+
+                        The water experiment was followed by an
+                        air–solid demonstration to observe the
+                        differences between particulate and
+                        aggregative fluidisation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EXPERIMENT PARAMETERS -->
+
+            <div class="parameter-grid">
+
+                <div>
+                    <span>Particle</span>
+                    <strong>Silica sand</strong>
+                </div>
+
+                <div>
+                    <span>Particle diameter</span>
+                    <strong>0.8 mm</strong>
+                </div>
+
+                <div>
+                    <span>Fluid</span>
+                    <strong>Water</strong>
+                </div>
+
+                <div>
+                    <span>Column diameter</span>
+                    <strong>45 mm</strong>
+                </div>
+
+                <div>
+                    <span>Column length</span>
+                    <strong>540 mm</strong>
+                </div>
+
+                <div>
+                    <span>Flow range</span>
+                    <strong>0.8–3.8 L/min</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DATA ANALYSIS -->
+
+        <section class="project-section light-section">
+
+            <div class="section-label">
+                04 — DATA & CALCULATIONS
+            </div>
+
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <h2>
+                        Turning measurements into
+                        <span>engineering data.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The recorded flow rates and pressure differences
+                        were converted into engineering quantities that
+                        could be used to characterise the bed.
+
+                    </p>
+
+
+                    <p>
+
+                        Calculations included superficial velocity,
+                        void fraction, Reynolds number, pressure drop
+                        and Froude number.
+
+                    </p>
+
+
+                    <p>
+
+                        The experimental values were then compared
+                        with theoretical predictions using the Ergun
+                        and Carman–Kozeny equations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="analysis-list">
+
+                <div class="analysis-item">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <h3>
+                            Superficial velocity
+                        </h3>
+
+                        <p>
+                            Flow rate was converted to superficial
+                            velocity using the cross-sectional area
+                            of the column.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <h3>
+                            Void fraction
+                        </h3>
+
+                        <p>
+                            Bed height measurements were used to
+                            determine changes in the void fraction
+                            as the bed expanded.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <h3>
+                            Reynolds number
+                        </h3>
+
+                        <p>
+                            Reynolds numbers ranged from approximately
+                            11.99 to 72.44 across the experimental
+                            flow range.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <h3>
+                            Pressure-drop correlations
+                        </h3>
+
+                        <p>
+                            Experimental pressure drops were compared
+                            against the Ergun and Carman–Kozeny
+                            correlations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULTS -->
+
+        <section class="project-section">
+
+            <div class="section-label">
+                05 — RESULTS
+            </div>
+
+
+            <div class="results-heading">
+
+                <h2>
+                    What the
+                    <span>data showed.</span>
+                </h2>
+
+                <p>
+
+                    The experimental pressure drop increased through
+                    the fixed-bed region before reaching a plateau
+                    around minimum fluidisation.
+
+                </p>
+
+            </div>
+
+
+            <!-- GRAPH PLACEHOLDER -->
+
+            <div class="figure-container">
+
+                <img
+                    src="../images/fluidization/pressure-drop-comparison.png"
+                    alt="Experimental and theoretical pressure drop comparison for the fluidization experiment">
+
+                <p class="figure-caption">
+
+                    Experimental pressure drop compared with
+                    theoretical correlations across the investigated
+                    flow-rate range.
+
+                </p>
+
+            </div>
+
+
+            <!-- RESULT TEXT -->
+
+            <div class="project-two-column results-text">
+
+                <div>
+
+                    <h3>
+                        Experimental behaviour
+                    </h3>
+
+                    <p>
+
+                        Pressure drop increased from approximately
+                        98.07 Pa at 0.8 L/min to 490.33 Pa at
+                        1.8 L/min.
+
+                    </p>
+
+                    <p>
+
+                        The pressure drop then remained approximately
+                        constant between 1.8 and 2.4 L/min before
+                        decreasing as the bed expanded further.
+
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Bed expansion
+                    </h3>
+
+                    <p>
+
+                        Bed height increased from approximately
+                        11.4 cm at the beginning of the experiment
+                        to 14.5 cm at the highest flow rates.
+
+                    </p>
+
+                    <p>
+
+                        The corresponding void fraction increased
+                        from approximately 0.3715 to 0.5059,
+                        indicating expansion of the fluidized bed.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MODEL COMPARISON -->
+
+        <section class="project-section light-section">
+
+            <div class="section-label">
+                06 — MODEL COMPARISON
+            </div>
+
+
+            <h2>
+                Experimental vs
+                <span>theoretical.</span>
+            </h2>
+
+
+            <div class="comparison-grid">
+
+
+                <div class="comparison-card">
+
+                    <span>
+                        ERGUN
+                    </span>
+
+                    <strong>
+                        0.002219 m/s
+                    </strong>
+
+                    <p>
+
+                        Predicted minimum fluidisation velocity.
+
+                    </p>
+
+                    <p>
+
+                        The correlation overpredicted experimental
+                        pressure drop by approximately 3.5–9 times.
+
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-card">
+
+                    <span>
+                        CARMAN–KOZENY
+                    </span>
+
+                    <strong>
+                        0.001918 m/s
+                    </strong>
+
+                    <p>
+
+                        Predicted minimum fluidisation velocity.
+
+                    </p>
+
+                    <p>
+
+                        The model substantially underpredicted the
+                        measured pressure drop and was outside its
+                        ideal laminar-flow range for the measured
+                        Reynolds numbers.
+
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-card featured">
+
+                    <span>
+                        EXPERIMENTAL
+                    </span>
+
+                    <strong>
+                        0.01886 m/s
+                    </strong>
+
+                    <p>
+
+                        Minimum fluidisation velocity determined
+                        from the observed pressure-drop plateau.
+
+                    </p>
+
+                    <p>
+
+                        This value provided the closest representation
+                        of the actual experimental system.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ENGINEERING INTERPRETATION -->
+
+        <section class="project-section">
+
+            <div class="section-label">
+                07 — ENGINEERING INTERPRETATION
+            </div>
+
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <h2>
+                        The model is only as good as
+                        <span>its assumptions.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The theoretical correlations did not fully
+                        reproduce the experimental behaviour because
+                        the bed did not remain a stationary packed
+                        structure after fluidisation began.
+
+                    </p>
+
+
+                    <p>
+
+                        As the flow rate increased, particles moved,
+                        the bed expanded and the void fraction changed.
+                        These changes altered the internal resistance
+                        to flow.
+
+                    </p>
+
+
+                    <p>
+
+                        The Ergun correlation therefore provided useful
+                        information about fixed-bed behaviour but did
+                        not reproduce the pressure-drop plateau observed
+                        after fluidisation.
+
+                    </p>
+
+
+                    <p>
+
+                        The experimental Reynolds numbers ranged from
+                        approximately 11.99 to 72.44, limiting the
+                        suitability of the simplified Carman–Kozeny
+                        treatment for the investigated conditions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FLUIDISATION REGIME -->
+
+        <section class="project-section light-section">
+
+            <div class="section-label">
+                08 — FLUIDISATION REGIME
+            </div>
+
+
+            <div class="regime-box">
+
+                <div>
+
+                    <span>
+                        EXPERIMENTAL FROUDE NUMBER
+                    </span>
+
+                    <strong>
+                        0.04534
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Particulate fluidisation
+                    </h3>
+
+                    <p>
+
+                        The low experimental Froude number, together
+                        with the smoother bed expansion observed in
+                        the water–silica sand system, supported
+                        classification as particulate fluidisation.
+
+                    </p>
+
+                    <p>
+
+                        In contrast, the air–solid demonstration
+                        produced bubbling, pressure fluctuations and
+                        non-uniform expansion, consistent with
+                        aggregative or bubbling fluidisation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LIMITATIONS -->
+
+        <section class="project-section">
+
+            <div class="section-label">
+                09 — LIMITATIONS & IMPROVEMENTS
+            </div>
+
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <h2>
+                        What could be
+                        <span>improved?</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The experiment provided useful evidence of
+                        fluidisation behaviour, but several factors
+                        limited the accuracy of the analysis.
+
+                    </p>
+
+
+                    <ul class="improvement-list">
+
+                        <li>
+                            Bed height was measured manually, introducing
+                            measurement uncertainty.
+                        </li>
+
+                        <li>
+                            Particle size distribution and sphericity
+                            could be characterised more thoroughly.
+                        </li>
+
+                        <li>
+                            Fluid temperature could be monitored more
+                            consistently because viscosity affects
+                            the calculations.
+                        </li>
+
+                        <li>
+                            Pressure fluctuations could be recorded
+                            quantitatively during fluidisation.
+                        </li>
+
+                        <li>
+                            Void fraction could be measured at more
+                            flow rates to better represent bed expansion.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TAKEAWAYS -->
+
+        <section class="project-section light-section">
+
+            <div class="section-label">
+                10 — PROJECT TAKEAWAYS
+            </div>
+
+
+            <div class="takeaway-grid">
+
+                <div>
+
+                    <span>01</span>
+
+                    <h3>
+                        Experimental analysis
+                    </h3>
+
+                    <p>
+                        Worked with measured engineering data
+                        and converted raw observations into
+                        process variables.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>02</span>
+
+                    <h3>
+                        Computational analysis
+                    </h3>
+
+                    <p>
+                        Used Python-based calculations and
+                        visualisation to analyse experimental
+                        behaviour.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>03</span>
+
+                    <h3>
+                        Model evaluation
+                    </h3>
+
+                    <p>
+                        Compared theoretical correlations against
+                        experimental behaviour and evaluated their
+                        limitations.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>04</span>
+
+                    <h3>
+                        Engineering interpretation
+                    </h3>
+
+                    <p>
+                        Connected pressure-drop behaviour,
+                        bed expansion and fluidisation regime
+                        to physical changes within the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LINKS -->
+
+        <section class="project-links">
+
+            <div class="section-label">
+                PROJECT RESOURCES
+            </div>
+
+
+            <div class="buttons">
+
+                <a href="#"
+                    class="button primary">
+                    View analysis on GitHub
+                </a>
+
+                <a href="../index.html#work"
+                    class="button secondary">
+                    ← Back to projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- REFERENCES -->
+
+        <section class="project-references">
+
+            <div class="section-label">
+                REFERENCES
+            </div>
+
+
+            <p>
+
+                Ergun, S. (1952) 'Fluid flow through packed columns',
+                <i>Chemical Engineering Progress</i>, 48(2),
+                pp. 89–94.
+
+            </p>
+
+
+            <p>
+
+                Formisani, B. (1998) 'Fluidization of particulate
+                systems of limited size', <i>Chemical Engineering
+                Science</i>, 53(8), pp. 1367–1375.
+
+            </p>
+
+
+            <p>
+
+                Kunii, D. and Levenspiel, O. (2013)
+                <i>Fluidization Engineering</i>. 2nd edn.
+                Oxford: Butterworth-Heinemann.
+
+            </p>
+
+
+            <p>
+
+                McCabe, W.L., Smith, J.C. and Harriott, P. (1993)
+                <i>Unit Operations of Chemical Engineering</i>.
+                5th edn. New York: McGraw-Hill.
+
+            </p>
+
+
+            <p>
+
+                Wilhelm, R.H. and Kwauk, M. (1948)
+                'Fluidization of solid particles',
+                <i>Chemical Reviews</i>, 44(2), pp. 245–278.
+
+            </p>
+
+
+            <p>
+
+                Zhou, Y., Wang, J. and Zhu, J. (2023)
+                'Particulate and aggregative fluidization behaviour',
+                <i>Powder Technology</i>.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Cassandra Goto
+        </p>
+
+        <p>
+            Chemical Engineering · Data Analysis · Computational Tools
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
