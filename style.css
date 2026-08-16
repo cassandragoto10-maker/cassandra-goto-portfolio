@@ -1,5 +1,14 @@
+```css id="x4q8vm"
+/* ================================
+   FONTS
+================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
 
+
+/* ================================
+   VARIABLES
+================================ */
 
 :root {
     --background: #faf8f6;
@@ -11,6 +20,10 @@
     --border: #e7e0e3;
 }
 
+
+/* ================================
+   RESET
+================================ */
 
 * {
     box-sizing: border-box;
@@ -24,6 +37,7 @@ html {
 
 body {
     margin: 0;
+
     background: var(--background);
     color: var(--text);
 
@@ -33,10 +47,13 @@ body {
 }
 
 
-/* NAVIGATION */
+/* ================================
+   NAVIGATION
+================================ */
 
 .navbar {
     width: 100%;
+
     padding: 28px 7%;
 
     display: flex;
@@ -60,17 +77,28 @@ body {
 
     font-size: 14px;
     font-weight: 600;
+
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+
+.logo:hover {
+    transform: translateY(-2px);
 }
 
 
 nav {
     display: flex;
+
     gap: 30px;
 }
 
 
 nav a {
     color: var(--muted);
+
     text-decoration: none;
 
     font-size: 14px;
@@ -84,7 +112,9 @@ nav a:hover {
 }
 
 
-/* HERO */
+/* ================================
+   HERO
+================================ */
 
 .hero {
     min-height: 78vh;
@@ -145,8 +175,13 @@ h2 span {
 }
 
 
+/* ================================
+   BUTTONS
+================================ */
+
 .buttons {
     display: flex;
+
     gap: 12px;
 
     flex-wrap: wrap;
@@ -165,8 +200,10 @@ h2 span {
     font-size: 14px;
     font-weight: 500;
 
-    transition: transform 0.2s ease,
-                background 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
 }
 
 
@@ -177,22 +214,41 @@ h2 span {
 
 .primary {
     background: var(--text);
+
     color: white;
+}
+
+
+.primary:hover {
+    background: var(--accent);
 }
 
 
 .secondary {
     border: 1px solid var(--border);
+
     color: var(--text);
+
     background: transparent;
 }
 
 
-/* GENERAL SECTIONS */
+.secondary:hover {
+    border-color: var(--accent);
+
+    color: var(--accent);
+}
+
+
+/* ================================
+   GENERAL SECTIONS
+================================ */
 
 .preview,
 .work-section,
+.skills-section,
 .contact-section {
+
     padding: 110px 7%;
 
     border-top: 1px solid var(--border);
@@ -211,17 +267,6 @@ h2 span {
 }
 
 
-.preview-content {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
-
-    max-width: 1000px;
-}
-
-
 h2 {
     margin: 0;
 
@@ -233,7 +278,24 @@ h2 {
 }
 
 
+/* ================================
+   ABOUT
+================================ */
+
+.preview-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1000px;
+}
+
+
 .preview-content p {
+
     max-width: 520px;
 
     color: var(--muted);
@@ -242,14 +304,18 @@ h2 {
 }
 
 
-/* WORK */
+/* ================================
+   PROJECTS
+================================ */
 
 .work-section h2 {
+
     margin-bottom: 60px;
 }
 
 
 .project-grid {
+
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -259,7 +325,8 @@ h2 {
 
 
 .project-card {
-    min-height: 260px;
+
+    min-height: 300px;
 
     padding: 30px;
 
@@ -274,19 +341,30 @@ h2 {
 
     justify-content: flex-end;
 
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    text-decoration: none;
+
+    color: var(--text);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
 
 .project-card:hover {
+
     transform: translateY(-5px);
 
-    box-shadow: 0 15px 40px rgba(60, 40, 50, 0.08);
+    border-color: var(--accent);
+
+    box-shadow:
+        0 15px 40px rgba(60, 40, 50, 0.08);
 }
 
 
-.project-card span {
+.project-card > span {
+
     margin-bottom: auto;
 
     color: var(--accent);
@@ -296,6 +374,7 @@ h2 {
 
 
 .project-card h3 {
+
     margin: 0 0 8px;
 
     font-size: 22px;
@@ -303,7 +382,8 @@ h2 {
 
 
 .project-card p {
-    margin: 0;
+
+    margin: 0 0 18px;
 
     color: var(--muted);
 
@@ -311,12 +391,115 @@ h2 {
 }
 
 
-/* CONTACT */
+.project-tags {
+
+    margin-bottom: 18px;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+.project-link {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: var(--text);
+
+    transition: color 0.2s ease;
+}
+
+
+.project-card:hover .project-link {
+
+    color: var(--accent);
+}
+
+
+/* ================================
+   SKILLS
+================================ */
+
+.skills-section {
+    background: #f6f2f0;
+}
+
+
+.skills-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1100px;
+}
+
+
+.skills-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+}
+
+
+.skill-group {
+
+    padding: 25px 0;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.skill-group:last-child {
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.skill-group h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.skill-group p {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
 
 .contact-section {
+
     min-height: 70vh;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
@@ -324,11 +507,13 @@ h2 {
 
 
 .contact-section h2 {
+
     margin-bottom: 30px;
 }
 
 
 .contact-section p {
+
     max-width: 500px;
 
     margin-bottom: 30px;
@@ -337,14 +522,18 @@ h2 {
 }
 
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 
 footer {
+
     padding: 30px 7%;
 
     border-top: 1px solid var(--border);
 
     display: flex;
+
     justify-content: space-between;
 
     color: var(--muted);
@@ -353,26 +542,56 @@ footer {
 }
 
 
-/* MOBILE */
+footer p {
+
+    margin: 0;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .project-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
 
 @media (max-width: 700px) {
 
+    /* NAVIGATION */
+
     .navbar {
+
         padding: 20px 6%;
     }
 
 
     nav {
+
         gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
     }
 
 
     nav a {
+
         font-size: 12px;
     }
 
 
+    /* HERO */
+
     .hero {
+
         min-height: 75vh;
 
         padding: 70px 6% 100px;
@@ -380,35 +599,66 @@ footer {
 
 
     .hero h1 {
+
         letter-spacing: -3px;
     }
 
 
     .intro {
+
         font-size: 17px;
     }
 
 
+    /* SECTIONS */
+
     .preview,
     .work-section,
+    .skills-section,
     .contact-section {
+
         padding: 80px 6%;
     }
 
 
+    /* ABOUT */
+
     .preview-content {
+
         grid-template-columns: 1fr;
 
         gap: 30px;
     }
 
 
+    /* PROJECTS */
+
     .project-grid {
+
         grid-template-columns: 1fr;
     }
 
 
+    .project-card {
+
+        min-height: 270px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    /* FOOTER */
+
     footer {
+
         padding: 25px 6%;
 
         flex-direction: column;
@@ -417,3 +667,4 @@ footer {
     }
 
 }
+```
