@@ -1,32 +1,48 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cassandra Goto | Portfolio</title>
+    <title>Cassandra Goto | Chemical Engineering & Data Portfolio</title>
+
+    <meta name="description"
+        content="Cassandra Goto's portfolio showcasing Chemical Engineering, process design, data analysis, Python, SQL and computational projects.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+    <!-- NAVIGATION -->
+
     <header class="navbar">
-        <div class="logo">CG</div>
+
+        <a href="#" class="logo">CG</a>
 
         <nav>
             <a href="#about">About</a>
-            <a href="#work">Work</a>
+            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="documents/Cassandra_Goto_CV.pdf" target="_blank">CV</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
     <main>
 
+        <!-- HERO -->
+
         <section class="hero">
 
-            <p class="eyebrow">CHEMICAL ENGINEERING · DATA · AI</p>
+            <p class="eyebrow">
+                CHEMICAL ENGINEERING · DATA ANALYSIS · COMPUTATIONAL TOOLS
+            </p>
 
             <h1>
                 Cassandra<br>
@@ -34,79 +50,343 @@
             </h1>
 
             <p class="intro">
-                I apply engineering, data, and AI skills to solve practical problems.
+                I combine chemical engineering principles with data analysis
+                and computational tools to investigate practical engineering problems.
             </p>
 
             <div class="buttons">
-                <a href="#work" class="button primary">View my work</a>
-                <a href="#contact" class="button secondary">Get in touch</a>
+
+                <a href="#work" class="button primary">
+                    View my projects
+                </a>
+
+                <a href="documents/Cassandra_Goto_CV.pdf"
+                    class="button secondary"
+                    target="_blank">
+                    View my CV
+                </a>
+
             </div>
 
         </section>
 
 
+        <!-- ABOUT -->
+
         <section class="preview" id="about">
 
-            <div class="section-label">01 — ABOUT</div>
+            <div class="section-label">
+                01 — ABOUT
+            </div>
 
             <div class="preview-content">
 
                 <div>
+
                     <h2>
                         Engineering thinking,
                         <span>data skills.</span>
                     </h2>
+
                 </div>
 
+
                 <div>
+
                     <p>
                         I am a Chemical Engineering student interested in
-                        process design, data analysis, artificial intelligence
-                        and practical problem-solving.
+                        process engineering, process design, data analysis,
+                        simulation and computational problem-solving.
                     </p>
 
                     <p>
-                        This portfolio is a growing collection of projects,
-                        skills and experiences that show how I combine these
-                        areas in my work.
+                        My work combines engineering principles with tools
+                        such as Python, SQL, Excel and Aspen Plus to analyse
+                        data, investigate technical problems and communicate
+                        results.
                     </p>
+
+                    <p>
+                        This portfolio documents selected academic,
+                        technical and independent projects as I continue
+                        developing my engineering and data skills.
+                    </p>
+
                 </div>
 
             </div>
 
         </section>
 
+
+        <!-- PROJECTS -->
 
         <section class="work-section" id="work">
 
-            <div class="section-label">02 — WORK</div>
+            <div class="section-label">
+                02 — PROJECTS
+            </div>
 
-            <h2>Selected work</h2>
+            <h2>
+                Selected <span>projects.</span>
+            </h2>
+
 
             <div class="project-grid">
 
-                <div class="project-card">
+
+                <!-- PROJECT 01 -->
+
+                <a href="projects/fluidization.html"
+                    class="project-card">
+
                     <span>01</span>
-                    <h3>Chemical Engineering</h3>
-                    <p>
-                        Process design, simulation and engineering projects.
-                    </p>
-                </div>
 
-                <div class="project-card">
+                    <h3>
+                        Fluidization Analysis
+                    </h3>
+
+                    <p>
+                        Experimental pressure-drop analysis,
+                        fluidization calculations and comparison
+                        with theoretical models.
+                    </p>
+
+                    <div class="project-tags">
+                        Python · Fluidization · Data Analysis
+                    </div>
+
+                    <strong class="project-link">
+                        View project →
+                    </strong>
+
+                </a>
+
+
+                <!-- PROJECT 02 -->
+
+                <a href="projects/ecommerce-eda.html"
+                    class="project-card">
+
                     <span>02</span>
-                    <h3>Data Analysis</h3>
+
+                    <h3>
+                        E-commerce Data Analysis
+                    </h3>
+
                     <p>
-                        Python, SQL, data cleaning, analysis and visualisation.
+                        Exploratory analysis of e-commerce data
+                        using Python, Pandas and data visualisation
+                        techniques.
                     </p>
+
+                    <div class="project-tags">
+                        Python · Pandas · EDA
+                    </div>
+
+                    <strong class="project-link">
+                        View project →
+                    </strong>
+
+                </a>
+
+
+                <!-- PROJECT 03 -->
+
+                <a href="projects/ecommerce-sql.html"
+                    class="project-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        E-commerce SQL Analysis
+                    </h3>
+
+                    <p>
+                        SQL-based analysis used to investigate
+                        sales, customer behaviour and business
+                        performance.
+                    </p>
+
+                    <div class="project-tags">
+                        SQL · Data Analysis · Databases
+                    </div>
+
+                    <strong class="project-link">
+                        View project →
+                    </strong>
+
+                </a>
+
+
+                <!-- PROJECT 04 -->
+
+                <a href="projects/process-design.html"
+                    class="project-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Process Design
+                    </h3>
+
+                    <p>
+                        Chemical engineering process design involving
+                        process flowsheets, calculations, simulation
+                        and equipment sizing.
+                    </p>
+
+                    <div class="project-tags">
+                        Aspen Plus · Process Design · Simulation
+                    </div>
+
+                    <strong class="project-link">
+                        View project →
+                    </strong>
+
+                </a>
+
+
+                <!-- PROJECT 05 -->
+
+                <a href="projects/bioleaching.html"
+                    class="project-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        E-waste Bioleaching Research
+                    </h3>
+
+                    <p>
+                        Literature-based research investigating
+                        biological approaches for metal recovery
+                        from waste printed circuit boards.
+                    </p>
+
+                    <div class="project-tags">
+                        Research · Bioleaching · Sustainability
+                    </div>
+
+                    <strong class="project-link">
+                        View project →
+                    </strong>
+
+                </a>
+
+
+                <!-- PROJECT 06 -->
+
+                <a href="projects/future-project.html"
+                    class="project-card">
+
+                    <span>06</span>
+
+                    <h3>
+                        More to come
+                    </h3>
+
+                    <p>
+                        New engineering, data analysis and
+                        computational projects will be added
+                        as my portfolio develops.
+                    </p>
+
+                    <div class="project-tags">
+                        Engineering · Data · Computing
+                    </div>
+
+                    <strong class="project-link">
+                        Coming soon →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="skills-section" id="skills">
+
+            <div class="section-label">
+                03 — SKILLS
+            </div>
+
+
+            <div class="skills-content">
+
+                <div>
+
+                    <h2>
+                        Tools I use to
+                        <span>solve problems.</span>
+                    </h2>
+
                 </div>
 
-                <div class="project-card">
-                    <span>03</span>
-                    <h3>AI & Machine Learning</h3>
-                    <p>
-                        Practical applications of AI and machine learning.
-                    </p>
+
+                <div class="skills-list">
+
+
+                    <div class="skill-group">
+
+                        <h3>
+                            Chemical Engineering
+                        </h3>
+
+                        <p>
+                            Process Design · Process Calculations ·
+                            Fluidization · Separation Processes ·
+                            Mass & Energy Balances
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-group">
+
+                        <h3>
+                            Data Analysis
+                        </h3>
+
+                        <p>
+                            Python · Pandas · SQL · Data Cleaning ·
+                            Exploratory Data Analysis · Data Visualisation
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-group">
+
+                        <h3>
+                            Engineering & Technical Tools
+                        </h3>
+
+                        <p>
+                            Aspen Plus · Microsoft Excel ·
+                            Microsoft Office · Git · GitHub
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-group">
+
+                        <h3>
+                            Developing
+                        </h3>
+
+                        <p>
+                            Advanced Python · Statistical Analysis ·
+                            Machine Learning · Engineering Data Applications
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -114,9 +394,13 @@
         </section>
 
 
+        <!-- CONTACT -->
+
         <section class="contact-section" id="contact">
 
-            <div class="section-label">03 — CONTACT</div>
+            <div class="section-label">
+                04 — CONTACT
+            </div>
 
             <h2>
                 Have an opportunity<br>
@@ -125,25 +409,56 @@
 
             <p>
                 I am interested in internships, graduate opportunities,
-                engineering projects and collaboration.
+                engineering projects, data-focused roles and collaboration.
             </p>
 
-            <a href="mailto:cassandragoto10@gmail.com" class="button primary">
-                Contact Cassandra
-            </a>
+
+            <div class="buttons">
+
+                <a href="mailto:cassandragoto10@gmail.com"
+                    class="button primary">
+                    Contact Cassandra
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/cassandra-goto-1668a8327/"
+                    class="button secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+
+                <a href="https://github.com/cassandragoto10-maker"
+                    class="button secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Cassandra Goto</p>
 
         <p>
-            Chemical Engineering · Data Analysis · AI
+            © 2026 Cassandra Goto
         </p>
+
+        <p>
+            Chemical Engineering · Data Analysis · Computational Tools
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>
+```
