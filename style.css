@@ -668,3 +668,938 @@ footer p {
 
 }
 ```
+/* =========================================================
+   PROJECT PAGE — FLUIDIZATION
+   ========================================================= */
+
+
+/* ================================
+   PROJECT HERO
+================================ */
+
+.project-hero {
+    padding: 70px 7% 100px;
+
+    max-width: 1200px;
+}
+
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 55px;
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.2s ease,
+                transform 0.2s ease;
+}
+
+
+.back-link:hover {
+    color: var(--accent);
+
+    transform: translateX(-3px);
+}
+
+
+.project-hero .eyebrow {
+    margin-bottom: 25px;
+}
+
+
+.project-hero h1 {
+    margin: 0;
+
+    max-width: 1100px;
+
+    font-size: clamp(58px, 9vw, 120px);
+
+    line-height: 0.92;
+
+    letter-spacing: -5px;
+
+    font-weight: 600;
+}
+
+
+.project-hero h1 span {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-style: italic;
+
+    color: var(--accent);
+}
+
+
+.project-intro {
+    max-width: 720px;
+
+    margin: 45px 0 30px;
+
+    color: var(--muted);
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+.project-tags-large {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+
+.project-tags-large span {
+    padding: 8px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 30px;
+
+    background: var(--card);
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   KEY RESULTS
+================================ */
+
+.project-results {
+    padding: 0 7% 110px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    max-width: 1250px;
+}
+
+
+.result-card {
+    min-height: 190px;
+
+    padding: 25px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+}
+
+
+.result-card strong {
+    font-size: clamp(28px, 3vw, 40px);
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.result-card > span {
+    margin-top: 7px;
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+.result-card p {
+    margin: 18px 0 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   PROJECT SECTIONS
+================================ */
+
+.project-section {
+    padding: 110px 7%;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.light-section {
+    background: #f6f2f0;
+}
+
+
+.project-section > h2 {
+    max-width: 850px;
+
+    margin-bottom: 60px;
+}
+
+
+.project-two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1100px;
+}
+
+
+.project-two-column h2 {
+    max-width: 520px;
+}
+
+
+.project-two-column p {
+    max-width: 560px;
+
+    margin-top: 0;
+
+    margin-bottom: 22px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* ================================
+   OBJECTIVES
+================================ */
+
+.objective-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    max-width: 1100px;
+}
+
+
+.objective-card {
+    min-height: 230px;
+
+    padding: 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.objective-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 15px 40px rgba(60, 40, 50, 0.08);
+}
+
+
+.objective-card > span {
+    display: block;
+
+    margin-bottom: 55px;
+
+    color: var(--accent);
+
+    font-size: 13px;
+}
+
+
+.objective-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+}
+
+
+.objective-card p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* ================================
+   EXPERIMENT PARAMETERS
+================================ */
+
+.parameter-grid {
+    margin-top: 80px;
+
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+}
+
+
+.parameter-grid > div {
+    padding: 25px 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.parameter-grid > div:nth-child(3n + 1) {
+    padding-left: 0;
+}
+
+
+.parameter-grid span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.parameter-grid strong {
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+   DATA ANALYSIS
+================================ */
+
+.analysis-list {
+    max-width: 1100px;
+
+    margin-top: 80px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.analysis-item {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 25px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.analysis-item > span {
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.analysis-item h3 {
+    margin: 0 0 7px;
+
+    font-size: 19px;
+}
+
+
+.analysis-item p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   RESULTS
+================================ */
+
+.results-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1100px;
+
+    margin-bottom: 70px;
+}
+
+
+.results-heading h2 {
+    margin: 0;
+}
+
+
+.results-heading p {
+    max-width: 540px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* ================================
+   FIGURES
+================================ */
+
+.figure-container {
+    max-width: 1100px;
+
+    margin: 0 auto 80px;
+}
+
+
+.figure-container img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+}
+
+
+.figure-caption {
+    max-width: 750px;
+
+    margin: 15px 0 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   RESULT TEXT
+================================ */
+
+.results-text {
+    max-width: 1100px;
+}
+
+
+.results-text h3 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+}
+
+
+/* ================================
+   MODEL COMPARISON
+================================ */
+
+.comparison-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    max-width: 1150px;
+
+    margin-top: 60px;
+}
+
+
+.comparison-card {
+    min-height: 310px;
+
+    padding: 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.comparison-card > span {
+    margin-bottom: 35px;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.comparison-card strong {
+    margin-bottom: 18px;
+
+    font-size: 27px;
+
+    letter-spacing: -1px;
+}
+
+
+.comparison-card p {
+    margin: 0 0 15px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+.comparison-card.featured {
+    border-color: var(--accent);
+
+    background: #fbf7f9;
+}
+
+
+.comparison-card.featured strong {
+    color: var(--accent);
+}
+
+
+/* ================================
+   FLUIDISATION REGIME
+================================ */
+
+.regime-box {
+    max-width: 1100px;
+
+    padding: 45px;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+}
+
+
+.regime-box > div:first-child {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.regime-box > div:first-child span {
+    margin-bottom: 15px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.regime-box > div:first-child strong {
+    color: var(--accent);
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+
+.regime-box h3 {
+    margin: 0 0 15px;
+
+    font-size: 25px;
+}
+
+
+.regime-box p {
+    margin: 0 0 18px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* ================================
+   LIMITATIONS
+================================ */
+
+.improvement-list {
+    margin: 0;
+
+    padding-left: 20px;
+}
+
+
+.improvement-list li {
+    margin-bottom: 17px;
+
+    padding-left: 5px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+.improvement-list li::marker {
+    color: var(--accent);
+}
+
+
+/* ================================
+   TAKEAWAYS
+================================ */
+
+.takeaway-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+
+    max-width: 1150px;
+}
+
+
+.takeaway-grid > div {
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.takeaway-grid span {
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.takeaway-grid h3 {
+    margin: 45px 0 10px;
+
+    font-size: 18px;
+}
+
+
+.takeaway-grid p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   PROJECT LINKS
+================================ */
+
+.project-links {
+    padding: 80px 7%;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.project-links .section-label {
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   REFERENCES
+================================ */
+
+.project-references {
+    padding: 80px 7% 100px;
+
+    border-top: 1px solid var(--border);
+
+    background: #f6f2f0;
+}
+
+
+.project-references p {
+    max-width: 850px;
+
+    margin: 0 0 14px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   PROJECT PAGE RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .project-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .takeaway-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .project-two-column,
+    .results-heading,
+    .regime-box {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .objective-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .parameter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .parameter-grid > div:nth-child(3n + 1) {
+        padding-left: 20px;
+    }
+
+
+    .parameter-grid > div:nth-child(2n + 1) {
+        padding-left: 0;
+    }
+
+
+    .project-hero h1 {
+        letter-spacing: -3px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .project-hero {
+        padding: 55px 6% 80px;
+    }
+
+
+    .back-link {
+        margin-bottom: 40px;
+    }
+
+
+    .project-hero h1 {
+        font-size: clamp(50px, 16vw, 80px);
+
+        line-height: 0.95;
+    }
+
+
+    .project-intro {
+        font-size: 17px;
+    }
+
+
+    .project-results {
+        padding: 0 6% 80px;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .result-card {
+        min-height: 160px;
+    }
+
+
+    .project-section {
+        padding: 80px 6%;
+    }
+
+
+    .parameter-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .parameter-grid > div,
+    .parameter-grid > div:nth-child(2n + 1),
+    .parameter-grid > div:nth-child(3n + 1) {
+        padding-left: 0;
+    }
+
+
+    .analysis-item {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .regime-box {
+        padding: 30px;
+    }
+
+
+    .regime-box > div:first-child strong {
+        font-size: 55px;
+    }
+
+
+    .takeaway-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .takeaway-grid h3 {
+        margin-top: 30px;
+    }
+
+
+    .project-links,
+    .project-references {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .project-tags-large {
+        gap: 7px;
+    }
+
+
+    .project-tags-large span {
+        font-size: 11px;
+
+        padding: 7px 11px;
+    }
+
+}
